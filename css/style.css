@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*fonts google hay que agregar un link en el head y la fuente en css*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*header*/
+nav{
+    background-color: darkslategray;
+    color: floralwhite;
+    text-align: center;
+    padding: 15px;
+    
+}
+/*footer*/
+footer{
+    text-align: center;
+    background-color: darkslategray;
+    color: floralwhite;
+    padding: 20px;
+}
+
+section{
+    margin: 25px;
+}
+
+/*ejemplo display flex*/
+
+.padre{
+    display: flex;
+
+}
+
+h3{
+     margin: 10px 0px;
+}
+
+.hijo{
+    padding: 15px;
+    border: 2px solid black;
+    width: 25%;
+    height: 25px;
+
+}
+
+#box1{
+    background-color: blue;
+}
+
+#box2{
+    background-color: blueviolet;
+}
+#box3{
+    background-color: brown;
+}
+
+#box4{
+    background-color: burlywood;
+}
+
+#box5{
+    background-color: cadetblue;
+}
+
+#box6{
+    background-color: chartreuse;
+}
+
+#box7{
+    background-color: chocolate;
+}
+/*Reverse*/
+.padreReverse{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.padreColumna{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.padreColumnaReverse{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.contenedorWrap{
+    display: flex;
+    flex-direction: row;
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+
+}
+
+.contenedorCentrado{
+    display: flex;
+    flex-direction: row;
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    justify-content: center;/*centra los item*/
+
+}
+
+.contenedorDerecha{
+    display: flex;
+    flex-direction: row;
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    justify-content: flex-end;/*items al final*/
+
+}
+/*contenedor espaciado*/
+.contenedorBetween{
+    display: flex;
+    flex-direction: row;
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    justify-content: space-between;/*distribuye*/
+
+}
+
+/* contenedor con espacio al rededor*/
+
+.contenedorAround{
+    display: flex;
+    flex-direction: row;
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    justify-content: space-around;/*distribuye dejando espacios */
+
+}
+
+/*contenedor alineado verticalmente*/
+.contenedorVertical{
+    display: flex;
+    /*flex-direction: row; viene igual pro defecto*/
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    height: 400px;
+    align-content: center;/*centra sobre el eje secundario*/
+    justify-content: center; /*centra sobre el eje principal*/
+}
+
+.contenedorVerticalBetween{
+    display: flex;
+    /*flex-direction: row; viene igual pro defecto*/
+    background-color: darksalmon;
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    height: 400px;
+    align-content: space-between;/*centra sobre el eje secundario*/
+    justify-content: center; /*centra sobre el eje principal*/
+}
+
+.contenedorEjeVertical{
+    display: flex;
+    flex-direction: column; 
+    background-color: darksalmon;
+
+    flex-wrap: wrap; /*conserva el tamaño de .hijo"*/
+    height: 400px;
+    align-content: space-around;/*centra sobre el eje secundario*/
+    justify-content: center; /*centra sobre el eje principal*/
+}
